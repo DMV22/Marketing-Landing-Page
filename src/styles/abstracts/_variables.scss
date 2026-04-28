@@ -1,0 +1,62 @@
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-indigo-700: #4338ca;
+  --color-indigo-600: #4f46e5;
+  --color-indigo-500: #6366f1;
+  --color-indigo-50: #eef2ff;
+
+  --color-neutral-900: #171717;
+  --color-neutral-600: #525252;
+
+  --color-gradient-light-from: #f9fafb;
+  --color-gradient-light-to: #d2d6db;
+
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
+
+  --color-disabled-bg: #f5f5f5;
+  --color-disabled-text: #a3a3a3;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+
+  /* Typography */
+  --font-family: "Noto Sans", sans-serif;
+  --second-family: "Rockwell", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Gill Sans", sans-serif;
+  --font4: "Playfair Display", sans-serif;
+  --font5: "Arial", sans-serif;
+  --font6: "Antonio", sans-serif;
+  --font7: "Arial Black", sans-serif;
+
+  /* Font sizes */
+  --text-xs: 0.75rem;   // 12px
+  --text-sm: 0.875rem;  // 14px
+  --text-md: 1rem;      // 16px
+  --text-lg: 1.125rem;  // 18px
+  --text-xl: 1.25rem;   // 20px
+  --text-2xl: 1.5rem;   // 24px 
+  --text-3xl: 1.875rem; // 30px
+  --text-4xl: 2.25rem;  // 36px
+  --text-5xl: 3rem;     // 48px
+  --text-6xl: 3.75rem;  // 60px
+
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Radius */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
