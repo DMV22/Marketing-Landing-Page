@@ -1,7 +1,9 @@
+import Navbar from "./components/sections/Navbar/Navbar";
+
 function App() {
   return (
     <div>
-      <h1>Marketing Landing Page</h1>
+      <Navbar />
     </div>
   );
 }

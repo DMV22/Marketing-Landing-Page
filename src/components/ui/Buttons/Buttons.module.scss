@@ -1,0 +1,10 @@
+@use '../../../styles/abstracts/mixins' as *;
+
+.cta-buttons {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    gap: var(--space-200);
+  }
+}
