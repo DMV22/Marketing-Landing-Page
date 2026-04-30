@@ -6,6 +6,10 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  padding: var(--space-600) var(--space-150)
+}
+
 .btn {
   border-radius: 0.25rem;
   font-weight: 500;

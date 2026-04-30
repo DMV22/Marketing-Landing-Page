@@ -6,7 +6,7 @@ import styles from './Hero.module.scss'
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <div className={styles.hero__container}>
+      <div className={`${styles.hero__container} container`}>
         <div className={styles.hero__message}>
           <div className={styles.hero__content}>
             <h1 className={styles.hero__title}>Well crafted abstract gradient</h1>
