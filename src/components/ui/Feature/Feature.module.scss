@@ -1,0 +1,23 @@
+.image {
+  display: block;
+  margin: auto;
+}
+
+.title {
+  margin-top: var(--space-250);
+  margin-bottom: var(--space-100);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-xl);
+  line-height: 140%;
+}
+
+.description {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-md);
+  line-height: var(--line-height-base);
+}
+
+.title,
+.description {
+  text-align: center;
+}

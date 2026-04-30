@@ -10,10 +10,10 @@ export default function FeaturesHeader({ type }) {
   }
 
   return (
-    <div className={styles.features__header}>
-      <p className={styles.features__name}>{feature.name}</p>
-      <h2 className={styles.features__title}>{feature.title}</h2>
-      <p className={styles.features__description}>{feature.description}</p>
+    <div className={styles.header}>
+      <p className={styles.name}>{feature.name}</p>
+      <h2 className={styles.title}>{feature.title}</h2>
+      <p className={styles.description}>{feature.description}</p>
     </div>
   )
 }
