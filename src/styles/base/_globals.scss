@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 body {
   background: linear-gradient(to right, var(--color-gradient-light-from), var(--color-gradient-light-to));
   font-family: var(--font-family);
@@ -49,5 +51,17 @@ body {
     background: var(--color-disabled-bg);
     color: var(--color-disabled-text);
     cursor: not-allowed;
+  }
+}
+
+.text {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-lg);
+  line-height: 156%;
+  color: var(--color-text-secondary);
+
+  @include tablet {
+    font-size: var(--text-xl);
+    line-height: 140%;
   }
 }

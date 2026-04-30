@@ -1,11 +1,22 @@
-import React from 'react'
-import styles from './Buttons.module.scss'
+import styles from './Buttons.module.scss';
 
-export default function Buttons() {
+export default function Buttons({
+  variant = 'header',
+  primaryText = 'Learn more',
+  secondaryText = 'See pricing',
+  className = '',
+}) {
+  const classes = `${styles['cta-buttons']} ${styles[variant]} ${className}`.trim();
+
   return (
-    <div className={styles['cta-buttons']}>
-      <button className="btn btn--primary">Learn More</button>
-      <button className="btn btn--secondary">See Pricing</button>
+    <div className={classes}>
+      <button type="button" className="btn btn--primary">
+        {primaryText}
+      </button>
+
+      <button type="button" className="btn btn--secondary">
+        {secondaryText}
+      </button>
     </div>
-  )
+  );
 }
