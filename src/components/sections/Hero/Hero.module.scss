@@ -8,6 +8,10 @@
     gap: var(--space-600);
     padding: var(--space-600) var(--space-150);
 
+    @include tablet {
+      padding: var(--space-700) var(--space-150);
+    }
+
     @include desktop {
       flex-direction: row;
       justify-content: space-between;
