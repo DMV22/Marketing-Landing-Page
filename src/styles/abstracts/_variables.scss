@@ -55,6 +55,7 @@
   --space-100: 0.5rem; // 8px
   --space-150: 0.75rem; // 12px
   --space-200: 1rem; // 16px
+  --space-250: 1.25rem; // 20px
   --space-300: 1.5rem; // 24px
   --space-400: 2rem; // 32px
   --space-500: 2.5rem; // 40px
@@ -65,7 +66,7 @@
 
   /* Shadows */
   --shadow-surface: 0 1px 2px 0 rgba(0, 0, 0, 0.06),
-      0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-focus-ring: 0 0 0 4px rgba(68, 76, 231, 0.12);
 
   /* Font weights */
