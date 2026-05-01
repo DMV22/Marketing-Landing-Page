@@ -6,6 +6,10 @@
   @include tablet {
     margin-bottom: var(--space-700);
   }
+
+  @include desktop {
+    padding: 0 10rem;
+  }
 }
 
 .name {
