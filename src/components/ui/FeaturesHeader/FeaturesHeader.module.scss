@@ -1,0 +1,51 @@
+@use '../../../styles/abstracts/mixins' as *;
+
+.header {
+  margin-bottom: var(--space-600);
+
+  @include tablet {
+    margin-bottom: var(--space-700);
+  }
+
+  @include desktop {
+    padding: 0 10rem;
+  }
+}
+
+.name {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-md);
+  line-height: var(--line-height-base);
+  color: var(--color-indigo-700);
+}
+
+.title {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-3xl);
+  line-height: var(--line-height-tight);
+  margin-top: var(--space-150);
+  margin-bottom: var(--space-250);
+
+  @include tablet {
+    font-size: var(--text-5xl);
+    line-height: 100%;
+  }
+}
+
+.description {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-lg);
+  line-height: 156%;
+  color: var(--color-text-secondary);
+
+  @include tablet {
+    font-size: var(--text-xl);
+    line-height: 140%;
+  }
+}
+
+.name,
+.title,
+.description {
+  text-align: center;
+}

@@ -9,12 +9,12 @@ export default function Social() {
       <div className={styles.social__container}>
         <p className={styles.social__text}>Used by teams that you love</p>
         <Marquee
-          speed={60}           
-          gradient={true}       
+          speed={60}
+          gradient={true}
           gradientColor="white"
-          gradientWidth={200}  
-          pauseOnHover={true}   
-          autoFill={true}      
+          gradientWidth={200}
+          pauseOnHover={true}
+          autoFill={true}
           direction="right"
         >
           {brand.map((item, index) => (

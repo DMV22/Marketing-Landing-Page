@@ -18,14 +18,14 @@ export default function Navbar() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.header__container}>
+      <div className={styles.container}>
         <Logo />
 
-        <nav aria-label="Desktop navigation">
+        <nav className={styles.desktopNav} aria-label="Desktop navigation">
           <NavMenu
             listClassName={styles.nav}
-            itemClassName={styles.nav__item}
-            linkClassName={styles.nav__link}
+            itemClassName={styles.item}
+            linkClassName={styles.link}
           />
         </nav>
         <Buttons />
@@ -42,9 +42,9 @@ export default function Navbar() {
       >
         <nav aria-label="Mobile navigation">
           <NavMenu
-            listClassName={styles.mobileNav}
-            itemClassName={styles.mobileNav__item}
-            linkClassName={styles.mobileNav__link}
+            listClassName={styles.list}
+            itemClassName={styles.item}
+            linkClassName={styles.link}
             onLinkClick={closeMenu}
           />
         </nav>

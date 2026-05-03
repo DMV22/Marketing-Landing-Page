@@ -6,6 +6,14 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  padding: var(--space-600) var(--space-150);
+
+  @include desktop {
+    padding: var(--space-900);
+  }
+}
+
 .btn {
   border-radius: 0.25rem;
   font-weight: 500;
@@ -64,4 +72,13 @@ body {
     font-size: var(--text-xl);
     line-height: 140%;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-primary);
 }
