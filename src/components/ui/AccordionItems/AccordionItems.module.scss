@@ -1,0 +1,40 @@
+.item {
+  border-bottom: 1px solid #d4d4d4;
+  padding: 1.75rem 0;
+}
+
+.item:first-child {
+  padding-top: 0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: var(--space-200);
+  width: 100%;
+  padding: 0;
+}
+
+.title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-lg);
+  line-height: 156%;
+  text-align: start;
+}
+
+.answer {
+  margin-top: var(--space-100);
+  padding-right: 2.5rem;
+}
+
+.content {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-md);
+  line-height: 150%;
+  color: var(--color-text-secondary);
+}
