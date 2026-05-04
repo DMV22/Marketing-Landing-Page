@@ -11,8 +11,8 @@ export default function FeaturesHeader({ type }) {
 
   return (
     <div className={`${styles.header} ${type === 'pricing' ? styles.pricing : ''}`}>
-      <p className={styles.name}>{feature.name}</p>
-      <h2 className={styles.title}>{feature.title}</h2>
+      {feature.name && <p className={styles.name}>{feature.name}</p>}
+      <h2 className={`${styles.title} ${type === 'questions' ? styles.questions : ''}`}>{feature.title}</h2>
       <p className={styles.description}>{feature.description}</p>
     </div>
   )
