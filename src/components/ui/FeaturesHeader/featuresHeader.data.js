@@ -1,4 +1,4 @@
-export const featuresHeaderData = {
+export const benefitsHeaderData = {
   premium:
   {
     name: "Premium abstract images",
@@ -15,5 +15,10 @@ export const featuresHeaderData = {
     name: "Best-in-class support",
     title: "Convenience and licensing that empowers",
     description: "In a world where storytelling constantly evolves, don't let licensing and poor support hold you down."
+  },
+  pricing: {
+    name: "Pricing Tiers",
+    title: "Fit for all your needs",
+    description: "Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
   }
 }
