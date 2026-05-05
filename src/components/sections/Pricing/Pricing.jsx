@@ -1,8 +1,9 @@
-import Cards from '../../ui/Cards/Cards'
+import { useState } from 'react'
 import FeatureHeader from '../../ui/FeaturesHeader/FeaturesHeader'
 import ToggleButton from '../../ui/ToggleButton/ToggleButton'
+import Cards from '../../ui/Cards/Cards'
 import styles from './Pricing.module.scss'
-import { useState } from 'react'
+
 
 export default function Pricing() {
   const [billing, setBilling] = useState('monthly')

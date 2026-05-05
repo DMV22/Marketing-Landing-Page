@@ -1,4 +1,3 @@
-import React from 'react'
 import { cardData } from './cards.data'
 import checkMark from '../../../assets/check-fill.svg'
 import styles from './Cards.module.scss'

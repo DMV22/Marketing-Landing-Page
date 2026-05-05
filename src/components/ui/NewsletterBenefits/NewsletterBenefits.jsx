@@ -1,6 +1,6 @@
-import styles from './NewsletterBenefits.module.scss'
 import { newsletterBenefits } from './newsletterBenefits.data'
 import checkMark from '../../../assets/check-fill.svg'
+import styles from './NewsletterBenefits.module.scss'
 
 export default function NewsletterBenefits() {
   return (

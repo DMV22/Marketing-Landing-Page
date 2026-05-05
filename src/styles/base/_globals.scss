@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
 }
 
-.container {
+section {
   padding: var(--space-600) var(--space-150);
 
   @include desktop {
@@ -15,10 +15,10 @@ body {
 }
 
 .btn {
-  border-radius: 0.25rem;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 150%;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-md);
+  line-height: var(--line-height-base);
   padding: 0.625em 1.125em;
 
 

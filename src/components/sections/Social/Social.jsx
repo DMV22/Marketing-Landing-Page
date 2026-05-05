@@ -6,8 +6,7 @@ import styles from './Social.module.scss'
 export default function Social() {
   return (
     <section className={styles.social}>
-      <div className={styles.social__container}>
-        <p className={styles.social__text}>Used by teams that you love</p>
+        <p className={styles.text}>Used by teams that you love</p>
         <Marquee
           speed={60}
           gradient={true}
@@ -22,11 +21,10 @@ export default function Social() {
               key={index}
               brandSrc={item.logo}
               brand={item.name}
-              className={styles.social__image}
+              className={styles.image}
             />
           ))}
         </Marquee>
-      </div>
     </section>
   );
 }
