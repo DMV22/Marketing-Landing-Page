@@ -118,12 +118,12 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: var(--space-150);
+  gap: var(--space-250);
 }
 
 .advantageItem {
   display: flex;
-  gap: var(--space-250);
+  gap: var(--space-150);
   align-items: center;
 }
 
