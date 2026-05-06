@@ -5,16 +5,24 @@ import minusIcon from '../../../assets/minus-circle.svg'
 import styles from './AccordionItems.module.scss'
 
 export default function AccordionItems() {
-  const [activeId, setActiveId] = useState(accordionItemsData.map(item => item.id));
+  const [openIds, setOpenIds] = useState(new Set(accordionItemsData.map(item => item.id)));
 
   const toggleAccordion = (id) => {
-    setActiveId((prev) => prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]);
+    const newOpenIds = new Set(openIds);
+
+    if (newOpenIds.has(id)) {
+      newOpenIds.delete(id);
+    } else {
+      newOpenIds.add(id);
+    }
+
+    setOpenIds(newOpenIds);
   }
 
   return (
     <div className="items">
       {accordionItemsData.map((item) => {
-        const isOpen = activeId.includes(item.id)
+        const isOpen = openIds.has(item.id);
 
         return (
           <div key={item.id} className={styles.item}>
