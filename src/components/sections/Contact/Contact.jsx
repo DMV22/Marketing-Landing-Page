@@ -1,4 +1,5 @@
 import { contactData } from './contact.data'
+import ContactForm from '../../ui/ContactForm/ContactForm'
 import styles from './Contact.module.scss'
 
 
@@ -20,6 +21,7 @@ export default function Contact() {
           ))}
         </ul>
       </div>
+      <ContactForm />
     </section>
   )
 }
