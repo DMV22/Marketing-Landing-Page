@@ -1,5 +1,9 @@
 @use '../abstracts/mixins' as *;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(to right, var(--color-gradient-light-from), var(--color-gradient-light-to));
   font-family: var(--font-family);

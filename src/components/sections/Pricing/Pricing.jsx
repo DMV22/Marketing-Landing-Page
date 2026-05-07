@@ -13,7 +13,7 @@ export default function Pricing() {
   }
 
   return (
-    <section className={styles.pricing}>
+    <section id="pricing" className={styles.pricing}>
       <div className={`${styles.container} container`}>
         <FeatureHeader type="pricing" />
         <ToggleButton billing={billing} onToggle={handleToggle} />

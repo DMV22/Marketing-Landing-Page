@@ -5,7 +5,7 @@ import styles from './Newsletter.module.scss'
 
 export default function Newsletter() {
   return (
-    <section className={styles.newsletter}>
+    <section id="newsletter" className={styles.newsletter}>
       <div className={styles.content}>
         <div className={styles.info}>
           <h2 className={styles.title}>Get the finest curated abstracts delivered weekly to your inbox</h2>

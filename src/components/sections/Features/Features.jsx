@@ -5,7 +5,7 @@ import styles from './Features.module.scss'
 
 export default function Features() {
   return (
-    <section className={styles.features}>
+    <section id="features" className={styles.features}>
       <FeaturesHeader type="premium" />
       <div className={`${styles.feature}`}>
         {featureData.map(({ image, title, description }) => (
