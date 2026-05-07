@@ -16,7 +16,7 @@ export default function Footer() {
       <ul className={styles.socials}>
         {socialsData.map(({ name, logo, href }) => {
           return (
-            <li>
+            <li key={name} className={styles.socialItem}>
               <a href={href} className={styles.socialLink} aria-label={name}>
                 <img src={logo} alt={name} />
               </a>

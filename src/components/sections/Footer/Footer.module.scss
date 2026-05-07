@@ -57,6 +57,22 @@
   margin-bottom: var(--space-200);
 }
 
+.socialLink {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+
+  &:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--shadow-focus-ring);
+    background-color: var(--color-hover-bg);
+  }
+}
+
 .copyright {
   font-weight: var(--font-weight-regular);
   text-align: center;

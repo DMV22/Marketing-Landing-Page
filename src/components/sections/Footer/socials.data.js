@@ -5,7 +5,7 @@ import github from '../../../assets/socials-icon/github.svg';
 import twitter from '../../../assets/socials-icon/twitter.svg';
 
 export const socialsData = [
-  { name: "Yotube", logo: youtube, href: '#' },
+  { name: "Youtube", logo: youtube, href: '#' },
   { name: "Instagram", logo: instagram, href: '#' },
   { name: "Facebook", logo: facebook, href: '#' },
   { name: "Github", logo: github, href: '#' },
