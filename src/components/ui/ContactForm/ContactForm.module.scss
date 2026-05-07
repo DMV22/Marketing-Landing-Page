@@ -1,0 +1,124 @@
+@use '../../../styles/abstracts/mixins' as *;
+@use '../../../styles/abstracts/forms' as *;
+
+.form {
+  box-shadow:
+    0 4px 6px -2px rgba(0, 0, 0, 0.05),
+    0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  border: 1px solid #e5e5e5;
+  border-radius: var(--radius-md);
+
+  @include desktop {
+    flex: 1;
+  }
+}
+
+.formGroup {
+  padding: var(--space-200);
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: var(--space-400);
+  }
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-300);
+  margin-bottom: var(--space-500);
+
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-300) var(--space-400);
+
+    .field:nth-child(1),
+    .field:nth-child(2) {
+      grid-column: span 2;
+    }
+
+    .field:nth-child(3) {
+      grid-column: 1 / 5;
+    }
+  }
+}
+
+.field {
+  @include form-field;
+}
+
+.label {
+  @include form-label;
+}
+
+.input,
+.textarea {
+  @include form-input-base;
+}
+
+.input {
+  padding: 0.625rem 0.875rem;
+}
+
+.textarea {
+  min-height: 6.75rem;
+  padding: 0.75rem 0.875rem;
+  resize: none;
+}
+
+.inputFocused,
+.textareaFocused {
+  @include form-input-focus;
+}
+
+.inputError,
+.textareaError {
+  @include form-input-error;
+}
+
+.message {
+  @include form-message;
+}
+
+.messageMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-150);
+}
+
+.messageSpacer {
+  min-height: 1.5rem;
+}
+
+.errorMessage {
+  color: var(--color-error);
+}
+
+.feedback {
+  @include form-feedback;
+}
+
+.successMessage {
+  color: var(--color-success);
+}
+
+.counter {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-sm);
+  line-height: 143%;
+  color: #737373;
+  margin-top: var(--space-150);
+}
+
+.counterError {
+  color: var(--color-error);
+}
+
+.submitBtn {
+  width: 100%;
+}
