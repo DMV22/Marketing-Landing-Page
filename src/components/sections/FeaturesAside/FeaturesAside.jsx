@@ -8,7 +8,7 @@ export default function FeaturesAside() {
   return (
     <>
       {featuresAsideConfig.map(({ type, image, data, imagePosition }) => (
-        <section className={styles.features} key={type}>
+        <section id='featuresAside' className={styles.features} key={type}>
           <FeaturesHeader type={type} />
 
           <div className={styles.content}>

@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className={styles.header}>
+    <header id="header" className={styles.header}>
       <div className={styles.container}>
         <Logo />
 

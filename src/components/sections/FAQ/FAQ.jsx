@@ -7,7 +7,7 @@ export default function FAQ() {
 
 
   return (
-    <section className={styles.faq}>
+    <section id='faq' className={styles.faq}>
       <FeaturesHeader type="questions" />
       <AccordionItems />
       <ContactBanner />

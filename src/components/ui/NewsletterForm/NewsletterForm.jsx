@@ -53,7 +53,7 @@ export default function NewsletterForm() {
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>
       <div className={styles.formGroup}>
         <div className={styles.field}>
-          <label htmlFor="newsletter-email" className={styles.label}>
+          <label htmlFor="newsletter-email" className={`${styles.label} ${styles.visuallyHidden}`}>
             Email
           </label>
 
