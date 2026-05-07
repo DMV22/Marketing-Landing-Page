@@ -1,0 +1,18 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-250);
+  margin-bottom: var(--space-600);
+}
+
+.benefitItem {
+  display: flex;
+  gap: var(--space-150);
+  align-items: center;
+}
+
+.benefit {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-lg);
+  line-height: 156%;
+}

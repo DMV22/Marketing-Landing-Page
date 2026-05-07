@@ -1,8 +1,8 @@
-import { featuresHeaderData } from './featuresHeader.data'
+import { benefitsHeaderData } from './featuresHeader.data'
 import styles from './FeaturesHeader.module.scss'
 
 export default function FeaturesHeader({ type }) {
-  const feature = featuresHeaderData[type]
+  const feature = benefitsHeaderData[type]
 
   if (!feature) {
     console.warn(`Feature with type "${type}" not found`)
@@ -10,9 +10,9 @@ export default function FeaturesHeader({ type }) {
   }
 
   return (
-    <div className={styles.header}>
-      <p className={styles.name}>{feature.name}</p>
-      <h2 className={styles.title}>{feature.title}</h2>
+    <div className={`${styles.header} ${type === 'pricing' ? styles.pricing : ''}`}>
+      {feature.name && <p className={styles.name}>{feature.name}</p>}
+      <h2 className={`${styles.title} ${type === 'questions' ? styles.questions : ''}`}>{feature.title}</h2>
       <p className={styles.description}>{feature.description}</p>
     </div>
   )

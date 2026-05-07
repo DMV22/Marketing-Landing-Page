@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Logo from '../../ui/Logo/Logo';
+import NavMenu from '../../ui/NavMenu/NavMenu';
 import Buttons from '../../ui/Buttons/Buttons';
 import BurgerButton from '../../ui/BurgerButton/BurgerButton';
-import NavMenu from '../../ui/NavMenu/NavMenu';
 import styles from './Navbar.module.scss';
 
 export default function Navbar() {
