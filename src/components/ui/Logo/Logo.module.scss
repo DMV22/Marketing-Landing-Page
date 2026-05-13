@@ -1,0 +1,13 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-050);
+}
+
+.name {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-md);
+  line-height: var(--line-height-base);
+  letter-spacing: -0.06em;
+  color: var(--color-text-primary);
+}

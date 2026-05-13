@@ -1,0 +1,113 @@
+@use '../../../styles/abstracts/mixins' as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.125rem 0;
+  padding-inline: 1rem;
+
+  @include desktop {
+    padding-inline: clamp(2rem, -9rem + 17.1875vw, 7rem);
+  }
+}
+
+.nav {
+  display: none;
+
+  @include desktop {
+    margin-right: var(--space-900);
+    display: flex;
+    align-items: center;
+    gap: var(--space-400);
+
+    .link {
+      font-weight: var(--font-weight-medium);
+      font-size: var(--text-md);
+      line-height: var(--line-height-base);
+      color: var(--color-text-secondary);
+
+      &:hover {
+        color: var(--color-text-primary);
+      }
+
+      &:focus {
+        padding: 0 0.125em;
+        border-radius: var(--radius-sm);
+        box-shadow: var(--shadow-focus-ring);
+      }
+    }
+  }
+}
+
+.burger {
+  color: var(--color-text-secondary);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-text-primary);
+  }
+
+  &:focus {
+    box-shadow: var(--shadow-focus-ring);
+    border-radius: var(--radius-sm);
+  }
+
+  &:disabled {
+    color: var(--color-disabled-text);
+    cursor: not-allowed;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  display: none;
+  padding: var(--space-200) var(--space-200);
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-100);
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .link {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--text-md);
+    line-height: var(--line-height-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-white);
+    transition:
+      background-color var(--transition-base),
+      color var(--transition-base);
+
+
+    &:hover {
+      background-color: var(--color-indigo-50);
+      color: var(--color-indigo-700);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: var(--shadow-focus-ring);
+    }
+  }
+}
+
+.mobileMenuOpen {
+  display: block;
+
+  @include desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,133 @@
+@use '../../../styles/abstracts/mixins' as *;
+
+.container {
+  margin-top: var(--space-600);
+  display: grid;
+  gap: var(--space-400);
+
+  @include tablet {
+    margin-top: var(--space-700);
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Перші два блоки займають по 2 колонки кожен */
+    .card:nth-child(1),
+    .card:nth-child(2) {
+      grid-column: span 2;
+    }
+
+    /* Третій блок починається з 2-ї лінії і закінчується на 4-й */
+    .card:nth-child(3) {
+      grid-column: 2 / 4;
+    }
+  }
+
+  @include wide {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-400);
+
+    .card:nth-child(n) {
+      grid-column: auto;
+    }
+  }
+}
+
+.simpleCard {
+  box-shadow: var(--shadow-surface);
+  border: 1px solid #e5e5e5;
+  border-radius: var(--radius-md);
+
+  .content {
+    height: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-400);
+  justify-content: space-between;
+  padding: var(--space-200);
+
+  @include desktop {
+    padding: var(--space-400);
+  }
+}
+
+.popularCard {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-indigo-600);
+  border-radius: var(--radius-md);
+
+  @include wide {
+    .content {
+      height: 89.8%;
+    }
+  }
+
+  .price,
+  span.period {
+    color: var(--color-indigo-700);
+  }
+}
+
+.popularBadge {
+  margin-bottom: var(--space-200);
+  padding: var(--space-200) 0;
+  background: var(--color-indigo-50);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--space-250);
+  line-height: 140%;
+  text-align: center;
+  color: var(--color-indigo-700);
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  font-size: var(--text-2xl);
+  line-height: 133%;
+}
+
+.title,
+.price {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-100);
+}
+
+.description {
+  color: var(--color-text-secondary);
+}
+
+.price {
+  font-size: var(--text-5xl);
+  line-height: 100%;
+}
+
+.description,
+.period,
+.advantage {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-md);
+  line-height: var(--line-height-base);
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-250);
+}
+
+.advantageItem {
+  display: flex;
+  gap: var(--space-150);
+  align-items: center;
+}
+
+.buyBtn {
+  padding: var(--space-150) 0;
+  width: 100%;
+}

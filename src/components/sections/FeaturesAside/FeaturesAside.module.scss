@@ -1,0 +1,47 @@
+@use '../../../styles/abstracts/mixins' as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-600);
+
+  @include desktop {
+    flex-direction: row;
+    align-items: stretch;
+    gap: var(--space-400);
+  }
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-500);
+
+  @include desktop {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+.imageWrapper {
+  align-self: center;
+
+  @include desktop {
+    flex: 1;
+    max-height: none;
+    align-self: stretch;
+  }
+}
+
+.image {
+  object-fit: none;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-md);
+
+
+  @include desktop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

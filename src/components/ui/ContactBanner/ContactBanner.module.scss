@@ -1,0 +1,44 @@
+@use '../../../styles/abstracts/mixins' as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-200);
+  padding: var(--space-200);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-md);
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--space-400);
+  }
+}
+
+.title {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-xl);
+  line-height: 140%;
+  margin-bottom: var(--space-100);
+}
+
+.description {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-md);
+  line-height: 150%;
+
+  span {
+    color: var(--color-indigo-700);
+  }
+}
+
+.contactBtn {
+  padding: var(--space-150) 0;
+  width: 100%;
+
+  @include tablet {
+    padding: var(--space-150) var(--space-250);
+    width: auto;
+  }
+}

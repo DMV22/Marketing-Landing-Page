@@ -1,0 +1,76 @@
+@use '../../../styles/abstracts/mixins' as *;
+@use '../../../styles/abstracts/forms' as *;
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+
+  @include tablet {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+.field {
+  @include form-field;
+}
+
+.label {
+  @include form-label;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.input {
+  @include form-input-base;
+
+  padding: 0.625rem 0.875rem;
+
+  @include tablet {
+    width: 20.875rem;
+  }
+
+  @include desktop {
+    width: 17.5rem;
+  }
+}
+
+.inputFocused {
+  @include form-input-focus;
+}
+
+.inputError {
+  @include form-input-error;
+}
+
+.message {
+  @include form-message;
+}
+
+.errorMessage {
+  color: var(--color-error);
+}
+
+.feedback {
+  @include form-feedback;
+}
+
+.successMessage {
+  color: var(--color-success);
+}
+
+.submitBtn {
+  width: 100%;
+  font-size: var(--text-sm);
+  line-height: var(--line-height-relaxed);
+
+  @include tablet {
+    width: auto;
+  }
+}

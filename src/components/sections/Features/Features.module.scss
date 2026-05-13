@@ -1,0 +1,16 @@
+@use '../../../styles/abstracts/mixins' as *;
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-400);
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.5rem var(--space-400);
+  }
+}
